@@ -1,6 +1,6 @@
 class Admin::DashboardController < ApplicationController
   # switch to using enviro variables
-  http_basic_authenticate_with name: "Jungle", password: "book"
+  http_basic_authenticate_with name: ENV['ADMIN_USERNAME'], password: ENV['ADMIN_PASSWORD']
 
   def show
     @category_count = Category.count
