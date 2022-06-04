@@ -43,6 +43,19 @@
         </li> %>
       </ul>
       <ul class="navbar-nav">
+
+      <% if current_user %> 
+      <li class="nav-item">
+        <%= link_to "Logout of #{current_user.email}", '/logout', class: "nav-link" %>
+      </li>
+
+      <% else %>
+        <li class="nav-item">
+          <%= link_to 'Login', '/login', class: "nav-link" %>
+        </li>
+      <% end %>
+
+  
         <li class="nav-item dropdown">
           <a
             class="nav-link dropdown-toggle text-danger"

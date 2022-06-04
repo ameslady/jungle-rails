@@ -1,0 +1,26 @@
+<section class="user-login">
+  <br>
+
+  <header>
+    <h1>Login</h1>
+  </header>
+
+  <br>
+
+<%= form_tag '/login' do %>
+
+  Email: <%= text_field_tag :email %>
+  Password: <%= password_field_tag :password %>
+  <%= submit_tag "Submit" %>
+
+<% end %>
+
+<hr class="solid">
+
+<p> Don't have an account yet? </p>
+
+<div class="well">
+  <%= link_to 'Sign Up', '/signup', class: 'btn btn-primary'%>
+</div>
+
+</section>
