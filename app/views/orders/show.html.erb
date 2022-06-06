@@ -2,7 +2,7 @@
 
   <header class="page-header">
     <h1>Order #<%= @order.id %></h1>
-    <%= "test@test.com" %>  <!-- use current_user.email -->
+    <%= current_user.email || "test@test.com" %>
   </header>
 
   <div class="order-summary jumbotron">
