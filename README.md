@@ -1,6 +1,6 @@
-# Jungle
+# Jungle Plant Shop 🪴
 
-A mini e-commerce application built with Rails 6.1 for purposes of teaching Rails by example.
+Mini e-commerce application catered to plant enthusiats built with Rails 6.1.
 
 ## Setup
 
@@ -29,3 +29,11 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 - Bootstrap 5
 - PostgreSQL 9.x
 - Stripe
+- Cypress
+- Webpack DevServer
+
+## Roadmap
+
+- Email receipt feature
+- Product ratings feature
+- Inventory adjustment feature
